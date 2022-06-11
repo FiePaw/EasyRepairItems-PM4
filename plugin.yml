@@ -1,14 +1,15 @@
 name: EasyRepairItems
 main: GodWeedZao\EasyRepairItems\Main
 version: 1.1.0
-api: 3.0.0
+api: 4.0.0
 load: POSTWORLD
-author: GodWeedZao
+author: [GodWeedZao, FiePaw]
 description: Repair damaged items in hand.
 depend: [EconomyAPI]
 commands:
   repair:
     describtion: "Repair Damaged Item In Hand"
+    permissions: EasyRepairItems.command
 permissions:
   EasyRepairItems.command:
     default: op
