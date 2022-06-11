@@ -4,7 +4,7 @@ namespace GodWeedZao\EasyRepairItems\RepairCommands;
 
 use GodWeedZao\EasyRepairItems\Main;
 use GodWeedZao\EasyRepairItems\RepairCommands\RepairCommand;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\Server;
 
 class RepairItems
