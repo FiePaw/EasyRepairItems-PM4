@@ -7,7 +7,7 @@ use GodWeedZao\EasyRepairItems\RepairCommands\RepairArmor;
 use GodWeedZao\EasyRepairItems\RepairCommands\RepairItems;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\Server;
 
 class RepairCommand
@@ -47,7 +47,7 @@ class RepairCommand
                     $repairItem = new RepairItems ($this->plugin->getInstance());
                     $repairItem->RepairItem($player);
                 } else {
-                    $player->sendMessage("§l§4Item Held Item is not Tool/Armor, Repair Failed.");
+                    $player->sendMessage("§l§4Item bukan armor/senjata. repair dibatalkan!.");
                 }
             }
         }
