@@ -12,7 +12,7 @@ class Cooldown extends Task
         $this->plugin = $plugin;
     }
 
-    public function onRun($tick)
+    public function onRun(): void
     {
         foreach ($this->plugin->goldencarrotCooldown as $player) {
             if ($this->plugin->goldencarrotCooldownTime[$player] <= 0) {
